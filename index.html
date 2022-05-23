@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="decodificador.css">
+    <title>Decodificador</title>
+  </head>
+  <body>
+    <header>
+        <img class="head" src="Vector.svg">
+    </header>
+    <section>
+        <input class="campo1" type="text" placeholder="Digite seu texto">
+    </section>
+    <aside>
+        <textarea name="result" id="mytextarea" onchange="backImage()" class="result" placeholder="Nenhuma mensagem encontrada"></textarea>
+        <button class="textcopy">Copiar</button>
+    </aside>
+    <footer>
+      <div class="message">
+        <img class="imagem" src="Vector2.svg">
+        <span class="texto2">Apenas letras minúsculas e sem acento.</span>
+      </div>           
+      <button class="but1" onclick="btnEncriptar()">Criptografar</button>
+      <button class="but2" onclick="btnDesencriptar()">Descriptografar</button>
+      <br>
+      <div id="rodape">
+        <span class="author"><strong>Author:</strong> Rodolfo Aparecido Mendonça | </span><span class="email"><strong>Email:</strong> rodolfo.aparecidomend@gmail.com</span>
+      </div>
+    </footer>
+    <script src="decodificador.js"></script>
+  </body>
+</html>
